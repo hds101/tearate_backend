@@ -7,7 +7,7 @@ require_relative '../apps/admin/application'
 
 Hanami.configure do
   mount Admin::Application, at: '/admin'
-  mount Api::Application, at: '/'
+  mount Api::Application, at: '/api'
 
   model do
     ##
