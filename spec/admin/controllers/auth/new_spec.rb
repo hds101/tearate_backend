@@ -1,4 +1,4 @@
-RSpec.describe Admin::Controllers::Dashboard::Show, type: :action do
+RSpec.describe Admin::Controllers::Auth::New, type: :action do
   let(:action) { described_class.new }
   let(:params) { Hash[] }
 

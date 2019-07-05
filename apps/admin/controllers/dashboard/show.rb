@@ -1,7 +1,7 @@
 module Admin
   module Controllers
     module Dashboard
-      class Index
+      class Show
         include Admin::Action
 
         def call(params)

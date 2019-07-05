@@ -5,6 +5,14 @@
     <%= favicon %>
   </head>
   <body>
+    <% if !!current_user %>
+      <%=
+        form_for :auth, routes.auth_path, method: :delete do
+          submit 'Sign out'
+        end
+      %>
+      <hr />
+    <% end %>
     <%= yield %>
   </body>
 </html>

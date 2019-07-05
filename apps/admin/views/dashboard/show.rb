@@ -1,7 +1,7 @@
 module Admin
   module Views
     module Dashboard
-      class Index
+      class Show
         include Admin::View
       end
     end

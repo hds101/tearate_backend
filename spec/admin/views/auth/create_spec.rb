@@ -1,6 +1,6 @@
-RSpec.describe Admin::Views::Dashboard::Show, type: :view do
+RSpec.describe Admin::Views::Auth::Create, type: :view do
   let(:exposures) { Hash[format: :html] }
-  let(:template)  { Hanami::View::Template.new('apps/admin/templates/dashboard/show.html.erb') }
+  let(:template)  { Hanami::View::Template.new('apps/admin/templates/auth/create.html.erb') }
   let(:view)      { described_class.new(template, exposures) }
   let(:rendered)  { view.render }
 
