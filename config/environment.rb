@@ -3,8 +3,10 @@ require 'hanami/setup'
 require 'hanami/model'
 require_relative '../lib/tearate_backend'
 require_relative '../apps/api/application'
+require_relative '../apps/admin/application'
 
 Hanami.configure do
+  mount Admin::Application, at: '/admin'
   mount Api::Application, at: '/'
 
   model do
