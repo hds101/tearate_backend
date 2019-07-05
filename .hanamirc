@@ -1,0 +1,3 @@
+project=tearate_backend
+test=rspec
+template=erb
